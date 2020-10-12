@@ -1,0 +1,49 @@
+.header
+    background-color: $dark
+    padding: 15px 0px 15px 0px
+    &-wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-nav
+        margin: auto
+    &-links
+        list-style: none
+        display: flex
+        align-items: center
+        justify-content: space-between
+        min-width: 531px
+        padding: 0
+    &__link
+        text-decoration: none
+        color: $light
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        &--uppercase
+            text-transform: uppercase
+.search
+    position: relative
+    overflow: hidden
+    border-radius: 10px
+    height: 39px
+    &__input
+        height: 100%
+        width: 263px
+        padding-left: 24px
+        padding-right: 65px
+        border: none
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        background-color: $header-search-bg
+        color: $header-search-text
+    &__button
+        position: absolute
+        right: 20px
+        top: 9px
+        bottom: 10px
+        background-color: transparent
+        border: none
