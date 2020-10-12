@@ -451,26 +451,6 @@ template {
   display: block;
 }
 
-@font-face {
-  font-family: 'Lato';
-  src: url("../fonts/Lato Regular.woff2") format("woff2");
-  src: url("../fonts/Lato Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2044;
-}
-
-@font-face {
-  font-family: 'Lato Black';
-  src: url("../fonts/Lato Black.woff2") format("woff2");
-  src: url("../fonts/Lato Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-2044;
-}
-
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -623,9 +603,6 @@ template {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     bottom: 9px;
-  }
-  .text {
-    padding-top: 100px;
   }
 }
 
