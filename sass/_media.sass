@@ -11,21 +11,110 @@
         &-wrap
             flex-wrap: wrap
         &-nav
-            flex-basis: 100%
             padding-top: 15px
+            flex-basis: 100%
+        &-links
+            width: 100%
         &-logo
             order: -2
     .search
         order: -1
 
 @media ( max-width: 767px )
+    body
+        &.lock
+            overflow: hidden
     .container
         width: 550px
-    .search
-        display: none
-    .header-nav
-        display: none
+    .navbar
+        &__search
+            &--mobile
+                &--hidden
+                    display: none
+                &--visible
+                    display: block
+    .header
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
+        z-index: 50
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: #3DC47E
+            z-index: 2
+        &-wrap
+            position: relative
+        &-logo
+            position: relative
+            z-index: 3
+        &-nav
+            position: fixed
+            top: -100%
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: $dark
+            padding: 70px 0px 0px 0px
+            overflow: auto
+            &.active
+                top: 0
+                transition: all 0.5s ease 0s
 
+        &-links
+            flex-direction: column
+
+        &__item
+            margin: 20px
+            &--mobile--visible
+                display: block
+        &__link
+            font-size: 20px
+        &__burger
+            display: block
+            position: relative
+            width: 30px
+            height: 20px
+            position: relative
+            z-index: 3
+            cursor: pointer
+            &::before,
+            &::after
+                content: ''
+                background-color: #fff
+                position: absolute
+                width: 100%
+                height: 2px
+                left: 0
+                transition: all 0.3s ease 0s
+            &::before
+                top: 0
+            &::after
+                bottom: 0
+            & span
+                position: absolute
+                background-color: #fff
+                left: 0
+                width: 100%
+                height: 2px
+                top: 9px
+                transition: all 0.3s ease 0s
+                &.active
+                    transform: scale(0)
+            &.active
+                &::before
+                    transform: rotate(45deg)
+                    top: 9px
+                &::after
+                    transform: rotate(-45deg)
+                    bottom: 9px
+    .text
+        padding-top: 100px
 @media ( max-width: 576px )
     .container
         width: 90%

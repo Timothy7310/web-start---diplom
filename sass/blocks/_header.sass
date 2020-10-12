@@ -12,8 +12,12 @@
         display: flex
         align-items: center
         justify-content: space-between
-        min-width: 531px
+        width: 531px
         padding: 0
+    &__item
+        &--mobile--visible
+            display: none
+
     &__link
         text-decoration: none
         color: $light
@@ -23,6 +27,8 @@
         line-height: 20px
         &--uppercase
             text-transform: uppercase
+    &__burger
+        display: none
 .search
     position: relative
     overflow: hidden
@@ -47,3 +53,8 @@
         bottom: 10px
         background-color: transparent
         border: none
+        cursor: pointer
+.navbar
+    &__search
+        &--mobile--visible
+            display: block
