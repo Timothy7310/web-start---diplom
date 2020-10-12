@@ -451,6 +451,214 @@ template {
   display: block;
 }
 
+.lifehacks {
+  background-color: #262D33;
+  padding-top: 23px;
+}
+
+.lifehacks-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 570px;
+}
+
+.lifehacks-article {
+  position: relative;
+}
+
+.lifehacks-img {
+  min-width: 877px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35)));
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+  border-radius: 10px 0px 0px 10px;
+}
+
+.lifehacks-tools {
+  position: absolute;
+  top: 245px;
+  left: 55px;
+  color: #4592FF;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.lifehacks-title {
+  position: absolute;
+  font-family: Roboto Slab, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+  top: 253px;
+  left: 55px;
+}
+
+.button-wrap {
+  position: absolute;
+  bottom: 100px;
+  left: 55px;
+}
+
+.button-read {
+  position: relative;
+  padding: 10px 45px 10px 20px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #4592FF;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-read__arrow {
+  position: absolute;
+  right: 22px;
+  top: 17px;
+  bottom: 16px;
+}
+
+.author {
+  position: absolute;
+  top: 55px;
+  left: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author__img {
+  width: 45px;
+  height: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-text {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.author-text__name {
+  opacity: 0.85;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.author-text__prof {
+  opacity: 0.4;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.recommendations {
+  background-color: #ffffff;
+  padding: 20px 0px 0px 25px;
+  border-radius: 0px 10px 10px 0px;
+  width: 100%;
+}
+
+.recommendations-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #262D33;
+  margin: 0px 0px 20px 0px;
+}
+
+.recommendations-links {
+  list-style: none;
+  padding: 0px;
+}
+
+.recommendations-item:nth-child(1) {
+  color: #3BBDC4;
+}
+
+.recommendations-item:nth-child(2) {
+  color: #6E99AE;
+}
+
+.recommendations-item:nth-child(3) {
+  color: #AC8EE3;
+}
+
+.recommendations-item:nth-child(4) {
+  color: #FFA34D;
+}
+
+.recommendations-item:nth-child(5) {
+  color: #3DC47E;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+.recommendations-link {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: inherit;
+  padding-bottom: 19px;
+}
+
+.recommendations-link::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #D9DADB;
+  margin-bottom: 17px;
+}
+
+.recommendations__tools {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  padding-bottom: 8px;
+}
+
+.recommendations__about {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -515,7 +723,7 @@ template {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #3DC47E;
+    background-color: #4592FF;
     z-index: 2;
   }
   .header-wrap {

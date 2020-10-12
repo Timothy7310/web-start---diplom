@@ -1,0 +1,140 @@
+.lifehacks
+    background-color: $dark
+    padding-top: 23px
+    &-wrap
+        display: flex
+        max-height: 570px
+    &-article
+        position: relative
+    &-img
+        min-width: 877px
+        height: 100%
+        object-fit: cover
+        background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+        border-radius: 10px 0px 0px 10px
+    &-tools
+        position: absolute
+        top: 245px
+        left: 55px
+        color: $blue
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+    &-title
+        position: absolute
+        font-family: Roboto Slab, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 50px
+        color: $light
+        top: 253px
+        left: 55px
+.button
+    &-wrap
+        position: absolute
+        bottom: 100px
+        left: 55px
+    &-read
+        position: relative
+        padding: 10px 45px 10px 20px
+        color: $light
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        background-color: $blue
+        border-radius: 20px
+        border: none
+        cursor: pointer
+        &__arrow
+            position: absolute
+            right: 22px
+            top: 17px
+            bottom: 16px
+.author
+    position: absolute
+    top: 55px
+    left: 55px
+    display: flex
+    align-items: center
+    &__img
+        width: 45px
+        height: 45px
+        object-fit: cover
+        border-radius: 50%
+        margin-right: 10px
+    &-text
+        color: $light
+        display: flex
+        flex-direction: column
+        &__name
+            opacity: 0.85
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+        &__prof
+            opacity: 0.4
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 15px
+.recommendations
+    background-color: $light
+    padding: 20px 0px 0px 25px
+    border-radius: 0px 10px 10px 0px
+    width: 100%
+    &-title
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: $dark
+        margin: 0px 0px 20px 0px
+    &-links
+        list-style: none
+        padding: 0px
+    &-item
+        &:nth-child(1)
+            color: #3BBDC4
+        &:nth-child(2)
+            color: #6E99AE
+        &:nth-child(3)
+            color: #AC8EE3
+        &:nth-child(4)
+            color: #FFA34D
+        &:nth-child(5)
+            color: #3DC47E
+            padding-bottom: 0px
+            padding-top: 20px
+
+    &-link
+        text-decoration: none
+        display: flex
+        flex-direction: column
+        color: inherit
+        padding-bottom: 19px
+        &::before
+            content: ''
+            display: block
+            height: 1px
+            background: $rec-underline
+            margin-bottom: 17px
+    &__tools
+        text-transform: uppercase
+        letter-spacing: 0.5px
+        font-style: normal
+        font-weight: 900
+        font-size: 12px
+        line-height: 15px
+        padding-bottom: 8px
+    &__about
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $footer-info-color
