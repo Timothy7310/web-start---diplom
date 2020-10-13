@@ -3,39 +3,39 @@
     padding-top: 23px
     &-wrap
         display: flex
-        max-height: 570px
+        border-radius: 10px
+        overflow: hidden
     &-article
         position: relative
+        &__text
+            position: absolute
+            top: 55px
+            left: 55px
     &-img
         min-width: 877px
         height: 100%
         object-fit: cover
         background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
-        border-radius: 10px 0px 0px 10px
+
     &-tools
-        position: absolute
-        top: 245px
-        left: 55px
+
         color: $blue
         font-style: normal
         font-weight: 900
         font-size: 12px
         line-height: 15px
     &-title
-        position: absolute
+
         font-family: Roboto Slab, sans-serif
         font-style: normal
         font-weight: bold
         font-size: 40px
         line-height: 50px
         color: $light
-        top: 253px
-        left: 55px
+        margin: 20px 0px 50px 0px
+
 .button
-    &-wrap
-        position: absolute
-        bottom: 100px
-        left: 55px
+
     &-read
         position: relative
         padding: 10px 45px 10px 20px
@@ -54,11 +54,10 @@
             top: 17px
             bottom: 16px
 .author
-    position: absolute
-    top: 55px
-    left: 55px
+
     display: flex
     align-items: center
+    margin-bottom: 145px
     &__img
         width: 45px
         height: 45px
@@ -84,7 +83,7 @@
 .recommendations
     background-color: $light
     padding: 20px 0px 0px 25px
-    border-radius: 0px 10px 10px 0px
+
     width: 100%
     &-title
         font-style: normal

@@ -447,7 +447,7 @@ template {
   cursor: pointer;
 }
 
-.navbar__search--mobile--visible {
+.navbar-search--mobile--visible {
   display: block;
 }
 
@@ -460,11 +460,18 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-height: 570px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .lifehacks-article {
   position: relative;
+}
+
+.lifehacks-article__text {
+  position: absolute;
+  top: 55px;
+  left: 55px;
 }
 
 .lifehacks-img {
@@ -474,13 +481,9 @@ template {
      object-fit: cover;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35)));
   background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
-  border-radius: 10px 0px 0px 10px;
 }
 
 .lifehacks-tools {
-  position: absolute;
-  top: 245px;
-  left: 55px;
   color: #4592FF;
   font-style: normal;
   font-weight: 900;
@@ -489,21 +492,13 @@ template {
 }
 
 .lifehacks-title {
-  position: absolute;
   font-family: Roboto Slab, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
   color: #ffffff;
-  top: 253px;
-  left: 55px;
-}
-
-.button-wrap {
-  position: absolute;
-  bottom: 100px;
-  left: 55px;
+  margin: 20px 0px 50px 0px;
 }
 
 .button-read {
@@ -528,15 +523,13 @@ template {
 }
 
 .author {
-  position: absolute;
-  top: 55px;
-  left: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 145px;
 }
 
 .author__img {
@@ -578,7 +571,6 @@ template {
 .recommendations {
   background-color: #ffffff;
   padding: 20px 0px 0px 25px;
-  border-radius: 0px 10px 10px 0px;
   width: 100%;
 }
 
@@ -666,6 +658,9 @@ template {
   .search__input {
     width: 200px;
   }
+  .lifehacks-img {
+    min-width: 710px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -694,6 +689,28 @@ template {
         -ms-flex-order: -1;
             order: -1;
   }
+  .lifehacks-img {
+    min-width: 475px;
+  }
+  .lifehacks-title {
+    font-size: 27px;
+  }
+  .button-read {
+    font-size: 12px;
+  }
+  .recommendations-title {
+    font-size: 13px;
+  }
+  .recommendations__tools {
+    font-size: 11px;
+  }
+  .recommendations__about {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .author {
+    margin-bottom: 125px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -703,10 +720,10 @@ template {
   .container {
     width: 550px;
   }
-  .navbar__search--mobile--hidden {
+  .navbar-search--mobile--hidden {
     display: none;
   }
-  .navbar__search--mobile--visible {
+  .navbar-search--mobile--visible {
     display: block;
   }
   .header {
@@ -812,6 +829,35 @@ template {
             transform: rotate(-45deg);
     bottom: 9px;
   }
+  .lifehacks {
+    padding-top: 98px;
+  }
+  .lifehacks-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .lifehacks-article__text {
+    top: 25px;
+    left: 25px;
+  }
+  .lifehacks-title {
+    margin: 20px 0px 35px 0px;
+    font-size: 30px;
+  }
+  .author {
+    margin-bottom: 30px;
+  }
+  .recommendations-title {
+    font-size: 14px;
+  }
+  .recommendations__tools {
+    font-size: 12px;
+  }
+  .recommendations__about {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -820,6 +866,35 @@ template {
   }
   .header-logo {
     width: 125px;
+  }
+  .author {
+    margin-bottom: 20px;
+  }
+  .author__img {
+    width: 35px;
+    height: 35px;
+  }
+  .author-text__name {
+    font-size: 12px;
+  }
+  .author-text__prof {
+    font-size: 10px;
+  }
+  .lifehacks-tools {
+    font-size: 11px;
+  }
+  .lifehacks-title {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 23px 0px 30px 0px;
+  }
+  .button-read {
+    font-size: 11px;
+    padding: 8px 41px 10px 20px;
+  }
+  .button__arrow {
+    right: 15px;
+    top: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

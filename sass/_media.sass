@@ -4,6 +4,9 @@
     .search
         &__input
             width: 200px
+    .lifehacks
+        &-img
+            min-width: 710px
 @media ( max-width: 992px )
     .container
         width: 700px
@@ -19,6 +22,24 @@
             order: -2
     .search
         order: -1
+    .lifehacks
+        &-img
+            min-width: 475px
+        &-title
+            font-size: 27px
+    .button
+        &-read
+            font-size: 12px
+    .recommendations
+        &-title
+            font-size: 13px
+        &__tools
+            font-size: 11px
+        &__about
+            font-size: 13px
+            line-height: 18px
+    .author
+        margin-bottom: 125px
 
 @media ( max-width: 767px )
     body
@@ -27,7 +48,7 @@
     .container
         width: 550px
     .navbar
-        &__search
+        &-search
             &--mobile
                 &--hidden
                     display: none
@@ -113,9 +134,54 @@
                 &::after
                     transform: rotate(-45deg)
                     bottom: 9px
+    .lifehacks
+        padding-top: 98px
+        &-wrap
+            flex-direction: column
+        &-article
+            &__text
+                top: 25px
+                left: 25px
+        &-title
+            margin: 20px 0px 35px 0px
+            font-size: 30px
+    .author
+        margin-bottom: 30px
+    .recommendations
+        &-title
+            font-size: 14px
+        &__tools
+            font-size: 12px
+        &__about
+            font-size: 14px
+
 @media ( max-width: 576px )
     .container
         width: 90%
     .header
         &-logo
             width: 125px
+    .author
+        margin-bottom: 20px
+        &__img
+            width: 35px
+            height: 35px
+        &-text
+            &__name
+                font-size: 12px
+            &__prof
+                font-size: 10px
+    .lifehacks
+        &-tools
+            font-size: 11px
+        &-title
+            font-size: 20px
+            line-height: 30px
+            margin: 23px 0px 30px 0px
+    .button
+        &-read
+            font-size: 11px
+            padding: 8px 41px 10px 20px
+        &__arrow
+            right: 15px
+            top: 16px
