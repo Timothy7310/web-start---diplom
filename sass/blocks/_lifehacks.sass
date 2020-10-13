@@ -1,10 +1,17 @@
 .lifehacks
-    background-color: $dark
-    padding-top: 23px
+    background-color: $bg-grey
+    &-bg
+        background-color: $dark
+        height: 445px
+        width: 100%
+        position: absolute
+
     &-wrap
+        position: relative
         display: flex
         border-radius: 10px
         overflow: hidden
+        max-height: 573px
     &-article
         position: relative
         &__text

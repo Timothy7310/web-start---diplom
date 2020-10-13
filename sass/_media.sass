@@ -7,6 +7,19 @@
     .lifehacks
         &-img
             min-width: 710px
+    .foryou
+        &-cards
+            align-items: center
+        &-card
+            flex-basis: 20%
+            &__img
+                width: 60px
+                height: 60px
+                margin-left: 10px
+        &-link
+            font-size: 12px
+            line-height: 18px
+
 @media ( max-width: 992px )
     .container
         width: 700px
@@ -40,6 +53,43 @@
             line-height: 18px
     .author
         margin-bottom: 125px
+    .foryou
+        &-cards
+            display: grid
+            grid-gap: 20px
+            grid-template-columns: repeat(4, minmax(min-content, 1fr))
+            grid-auto-rows: minmax(83px, min-content)
+        &-card
+            &:nth-child(1)
+                grid-row: 1
+                grid-column: span 2
+                &::after
+                    right: -15px
+            &:nth-child(2)
+                grid-row: 1
+                grid-column: span 2
+                justify-self: end
+                &::after
+                    display: none
+            &:nth-child(3)
+                grid-row: 2
+                grid-column: span 2
+                &::after
+                    right: -15px
+            &:nth-child(4)
+                grid-row: 2
+                grid-column: span 2
+                justify-self: end
+                &::after
+                    display: none
+            &__text
+                width: 200px
+                font-size: 15px
+                line-height: 20px
+            &__img
+                width: 65px
+                height: 65px
+                margin: 15px
 
 @media ( max-width: 767px )
     body
@@ -135,9 +185,11 @@
                     transform: rotate(-45deg)
                     bottom: 9px
     .lifehacks
-        padding-top: 98px
+        padding-top: 96px
         &-wrap
             flex-direction: column
+            max-height: 100%
+            margin-top: 20px
         &-article
             &__text
                 top: 25px
@@ -145,6 +197,41 @@
         &-title
             margin: 20px 0px 35px 0px
             font-size: 30px
+    .foryou
+        &-card
+            &:nth-child(1)
+                grid-row: 1
+                grid-column: span 4
+                justify-self: center
+                &::after
+                    right: -15px
+            &:nth-child(2)
+                grid-row: 2
+                grid-column: span 4
+                justify-self: center
+                &::after
+                    display: block
+                    right: -15px
+            &:nth-child(3)
+                grid-row: 3
+                grid-column: span 4
+                justify-self: center
+                &::after
+                    right: -15px
+            &:nth-child(4)
+                grid-row: 4
+                grid-column: span 4
+                justify-self: center
+                &::after
+                    content: ''
+                    display: block
+                    height: 100%
+                    width: 1px
+                    background-color: $footer-info-color
+                    position: absolute
+                    top: 0
+                    right: -15px
+
     .author
         margin-bottom: 30px
     .recommendations
@@ -185,3 +272,11 @@
         &__arrow
             right: 15px
             top: 16px
+    .foryou
+        &-card
+            &__text
+                font-size: 14px
+                line-height: 18px
+            &__img
+                width: 60px
+                height: 60px

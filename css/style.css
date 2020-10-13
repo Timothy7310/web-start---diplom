@@ -361,7 +361,7 @@ template {
 
 .header {
   background-color: #262D33;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0px 38px 0px;
 }
 
 .header-wrap {
@@ -452,16 +452,24 @@ template {
 }
 
 .lifehacks {
+  background-color: #E5E5E5;
+}
+
+.lifehacks-bg {
   background-color: #262D33;
-  padding-top: 23px;
+  height: 445px;
+  width: 100%;
+  position: absolute;
 }
 
 .lifehacks-wrap {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
+  max-height: 573px;
 }
 
 .lifehacks-article {
@@ -651,6 +659,96 @@ template {
   color: #4B5157;
 }
 
+.foryou {
+  background-color: #E5E5E5;
+  padding-top: 30px;
+}
+
+.foryou-wrap {
+  background-color: #30363D;
+  padding: 30px 25px 35px 25px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.foryou-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.foryou-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.foryou-card {
+  position: relative;
+}
+
+.foryou-card__text {
+  width: 154px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.foryou-card__img {
+  width: 65px;
+  height: 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 15px;
+}
+
+.foryou-card:nth-child(1)::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #4B5157;
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+
+.foryou-card:nth-child(2)::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #4B5157;
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+
+.foryou-card:nth-child(3)::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: #4B5157;
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -660,6 +758,24 @@ template {
   }
   .lifehacks-img {
     min-width: 710px;
+  }
+  .foryou-cards {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .foryou-card {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .foryou-card__img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+  }
+  .foryou-link {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -710,6 +826,62 @@ template {
   }
   .author {
     margin-bottom: 125px;
+  }
+  .foryou-cards {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    -ms-grid-columns: (minmax(min-content, 1fr))[4];
+        grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+        grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    grid-auto-rows: minmax(83px, -webkit-min-content);
+    grid-auto-rows: minmax(83px, min-content);
+  }
+  .foryou-card:nth-child(1) {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .foryou-card:nth-child(1)::after {
+    right: -15px;
+  }
+  .foryou-card:nth-child(2) {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    grid-column: span 2;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .foryou-card:nth-child(2)::after {
+    display: none;
+  }
+  .foryou-card:nth-child(3) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    grid-column: span 2;
+  }
+  .foryou-card:nth-child(3)::after {
+    right: -15px;
+  }
+  .foryou-card:nth-child(4) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    grid-column: span 2;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .foryou-card:nth-child(4)::after {
+    display: none;
+  }
+  .foryou-card__text {
+    width: 200px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .foryou-card__img {
+    width: 65px;
+    height: 65px;
+    margin: 15px;
   }
 }
 
@@ -830,13 +1002,15 @@ template {
     bottom: 9px;
   }
   .lifehacks {
-    padding-top: 98px;
+    padding-top: 96px;
   }
   .lifehacks-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-height: 100%;
+    margin-top: 20px;
   }
   .lifehacks-article__text {
     top: 25px;
@@ -845,6 +1019,54 @@ template {
   .lifehacks-title {
     margin: 20px 0px 35px 0px;
     font-size: 30px;
+  }
+  .foryou-card:nth-child(1) {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    grid-column: span 4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .foryou-card:nth-child(1)::after {
+    right: -15px;
+  }
+  .foryou-card:nth-child(2) {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    grid-column: span 4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .foryou-card:nth-child(2)::after {
+    display: block;
+    right: -15px;
+  }
+  .foryou-card:nth-child(3) {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    grid-column: span 4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .foryou-card:nth-child(3)::after {
+    right: -15px;
+  }
+  .foryou-card:nth-child(4) {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    grid-column: span 4;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .foryou-card:nth-child(4)::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: #4B5157;
+    position: absolute;
+    top: 0;
+    right: -15px;
   }
   .author {
     margin-bottom: 30px;
@@ -895,6 +1117,14 @@ template {
   .button__arrow {
     right: 15px;
     top: 16px;
+  }
+  .foryou-card__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .foryou-card__img {
+    width: 60px;
+    height: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
