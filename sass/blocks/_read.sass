@@ -17,6 +17,7 @@
         position: relative
         &-link
             text-decoration: none
+            width: 100%
         &-title
             font-family: Roboto Slab
             font-style: normal
@@ -53,16 +54,16 @@
             align-self: flex-end
             position: relative
             margin-top: 47px
-
             &::before
                 content: ''
                 display: block
-                width: 115%
+                width: 200%
                 height: 1px
                 background-color: $rec-underline
                 position: absolute
-                top: 0px
-                left: -30px
+                bottom: 58px
+                z-index: 4
+                left: 0px
 
             &__avatar
                 width: 30px
@@ -277,6 +278,16 @@
         border-radius: 10px
         grid-row: 2 / 4
         grid-column: 4
+        position: relative
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            width: 100%
+            left: 0
+            height: 1px
+            top: 57px
+            background-color: $rec-underline
         &-title
             font-style: normal
             font-weight: 900
@@ -287,15 +298,7 @@
             color: $dark
             margin: 18px 25px 45px 27px
             position: relative
-            &::after
-                content: ''
-                display: block
-                position: absolute
-                width: 102%
-                left: 0
-                height: 1px
-                bottom: -21px
-                background-color: $rec-underline
+
         &-buttons
             padding: 0px 0px 12px 25px
         &-button
@@ -345,16 +348,17 @@
         line-height: 20px
         color: $light
         position: relative
-        &__img
-            width: 17px
-            height: 17px
-            margin-right: 8px
         &::before
             content: ''
             display: block
-            width: 102%
+            width: 100%
             height: 1px
             background-color: $bluegreen-tr
             position: absolute
             left: 0
             top: -13px
+            overflow: hidden
+        &__img
+            width: 17px
+            height: 17px
+            margin-right: 8px
