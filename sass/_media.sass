@@ -183,6 +183,11 @@
                 width: 100%
             &-data
                 flex-basis: 66%
+    .investigation
+        &__title
+            font-size: 30px
+        &-button
+            font-size: 13px
 @media ( max-width: 767px )
     body
         &.lock
@@ -391,6 +396,8 @@
             &__img
                 &-car
                     display: none
+                &-laptop
+                    height: 265px
             &-text
                 margin: 0px auto
             &:nth-child(1)
@@ -414,6 +421,7 @@
         &-popular
             grid-column: 1
             grid-row: 3 / 5
+            height: 399px
         &-tags
             grid-column: 1
             grid-row: 11 / 13
@@ -426,3 +434,10 @@
         &-popular
             &-tool
                 flex-basis: 100%
+    .investigation
+        &__title
+            font-size: 26px
+        &-button
+            padding: 10px 40px 10px 15px
+            &__img
+                right: 15px

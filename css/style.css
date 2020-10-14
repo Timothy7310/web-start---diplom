@@ -508,6 +508,8 @@ template {
   font-weight: 900;
   font-size: 12px;
   line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .lifehacks-title {
@@ -763,6 +765,7 @@ template {
 .read {
   padding-top: 30px;
   background-color: #E5E5E5;
+  padding-bottom: 55px;
 }
 
 .read-wrap {
@@ -805,7 +808,7 @@ template {
   font-size: 16px;
   line-height: 25px;
   color: #262D33;
-  margin: 25px 25px 5px 25px;
+  margin: 25px 25px 3px 25px;
 }
 
 .read-article__text {
@@ -826,7 +829,7 @@ template {
   color: #939699;
   margin-left: 25px;
   position: absolute;
-  bottom: 28px;
+  bottom: 35px;
 }
 
 .read-article-info {
@@ -910,7 +913,7 @@ template {
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: -13px;
+  margin-bottom: -40px;
 }
 
 .read-article-text {
@@ -1294,6 +1297,86 @@ template {
   margin-right: 8px;
 }
 
+.investigation {
+  position: relative;
+  overflow: hidden;
+}
+
+.investigation-bg {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 400%;
+  overflow: hidden;
+}
+
+.investigation-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35)));
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35));
+}
+
+.investigation-wrap {
+  padding: 50px 0px 55px;
+  position: relative;
+  z-index: 10;
+  max-width: 946px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.investigation__title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0px 15px 25px 15px;
+}
+
+.investigation-button {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 10px 45px 10px 20px;
+  position: relative;
+  background-color: #4592FF;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.investigation-button__img {
+  position: absolute;
+  top: 17px;
+  right: 22px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -1571,6 +1654,12 @@ template {
     -ms-flex-preferred-size: 66%;
         flex-basis: 66%;
   }
+  .investigation__title {
+    font-size: 30px;
+  }
+  .investigation-button {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1841,6 +1930,9 @@ template {
   .read-article__img-car {
     display: none;
   }
+  .read-article__img-laptop {
+    height: 265px;
+  }
   .read-article-text {
     margin: 0px auto;
   }
@@ -1888,6 +1980,7 @@ template {
     -ms-grid-row: 3;
     -ms-grid-row-span: 2;
     grid-row: 3 / 5;
+    height: 399px;
   }
   .read-tags {
     -ms-grid-column: 1;
@@ -1911,6 +2004,15 @@ template {
   .read-popular-tool {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .investigation__title {
+    font-size: 26px;
+  }
+  .investigation-button {
+    padding: 10px 40px 10px 15px;
+  }
+  .investigation-button__img {
+    right: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
