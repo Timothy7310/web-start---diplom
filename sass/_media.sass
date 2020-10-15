@@ -188,6 +188,23 @@
             font-size: 30px
         &-button
             font-size: 13px
+    .news
+        &-wrap
+            align-items: center
+            flex-direction: column
+        &-main
+            width: 100%
+            margin-right: 0
+        &-recent
+            margin-top: 30px
+            &-title
+                font-size: 13px
+                text-align: center
+            &-items
+                display: flex
+                flex-wrap: wrap
+                width: 100%
+                justify-content: center
 @media ( max-width: 767px )
     body
         &.lock
@@ -338,6 +355,33 @@
             font-size: 12px
         &__about
             font-size: 14px
+    .news
+        &-recent
+            &-item
+                padding-right: 10px
+                padding-left: 10px
+        &-main
+            &-item
+                flex-direction: column
+                &::after
+                    width: 100%
+                    left: 0px
+    .main
+        &-item
+            &-img
+                height: 100%
+                width: 100%
+            &-text
+                flex-wrap: wrap
+                margin: 15px auto
+                &__info
+                    margin-bottom: 15px
+                &__data
+                    position: relative
+                    bottom: 0
+                &__favorites
+                    top: 0
+                    right: 0
 
 @media ( max-width: 576px )
     .container
