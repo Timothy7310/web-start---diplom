@@ -14,6 +14,7 @@
         max-height: 573px
     &-article
         position: relative
+        height: 100%
         &::before
             content: ''
             position: absolute
@@ -27,6 +28,7 @@
             position: absolute
             top: 55px
             left: 55px
+            max-width: 700px
     &-img
         min-width: 877px
         height: 100%
@@ -50,7 +52,15 @@
         line-height: 50px
         color: $light
         margin: 20px 0px 50px 0px
-
+    &-content
+        list-style-type: none
+        padding: 0
+        margin: 0
+        &__item
+            display: none
+            height: 100%
+            &--active
+                display: block
 .button
 
     &-read
@@ -99,7 +109,7 @@
             line-height: 15px
 .recommendations
     background-color: $light
-    padding: 20px 0px 0px 25px
+    padding: 20px 0px 0px 0px
 
     width: 100%
     &-title
@@ -110,11 +120,13 @@
         letter-spacing: 0.5px
         text-transform: uppercase
         color: $dark
-        margin: 0px 0px 20px 0px
+        margin: 0px 0px 20px 25px
     &-links
         list-style: none
         padding: 0px
     &-item
+        background-color: transparent
+        cursor: pointer
         &:nth-child(1)
             color: $bluegreen
         &:nth-child(2)
@@ -123,23 +135,26 @@
             color: $purple
         &:nth-child(4)
             color: $orange
+            padding-bottom: 20px
         &:nth-child(5)
             color: $green
-            padding-bottom: 0px
-            padding-top: 20px
+            padding-bottom: 14px
 
-    &-link
-        text-decoration: none
-        display: flex
-        flex-direction: column
-        color: inherit
-        padding-bottom: 19px
         &::before
             content: ''
             display: block
             height: 1px
             background: $rec-underline
             margin-bottom: 17px
+        &--active
+            background-color: $tabs-bg
+    &-link
+        text-decoration: none
+        display: flex
+        flex-direction: column
+        color: inherit
+        padding-bottom: 19px
+        padding-left: 25px
     &__tools
         text-transform: uppercase
         letter-spacing: 0.5px

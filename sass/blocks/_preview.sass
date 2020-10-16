@@ -13,12 +13,25 @@
         position: relative
         border-radius: 10px
         overflow: hidden
+        height: 100%
+        &::before
+            content: ''
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+
         &-text
             position: absolute
             top: 50px
             display: flex
             flex-direction: column
             align-items: center
+
         &-avatar
             width: 45px
             height: 45px
@@ -86,9 +99,11 @@
             position: absolute
             top: 18px
             left: 18px
+            z-index: 3
         &-img
             height: 100%
             object-fit: cover
+
     &-article
         background-color: $light
         border-radius: 10px
@@ -192,3 +207,15 @@
                 z-index: 3
                 height: 100%
                 object-fit: cover
+                border-radius: 10px
+.swiper-container
+    width: 100%
+    height: 100%
+.swiper-slide
+    width: 100%
+    height: 100%
+
+.swiper-pagination-bullet
+    background-color: #D9DADB !important
+.swiper-pagination-bullet-active
+    background-color: white !important
