@@ -82,7 +82,22 @@ $(document).ready(function() {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-})
+});
+
+
+$(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        
+        email: {
+          required: "Enter your email address",
+          email: "Enter your email address correctly, in the format name@domain.com",
+        },
+        
+      },
+    });
+  });
 
 });
 

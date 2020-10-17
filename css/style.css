@@ -2066,6 +2066,7 @@ template {
   display: -ms-flexbox;
   display: flex;
   height: 40px;
+  position: relative;
 }
 
 .form-subscribe__input {
@@ -2075,6 +2076,16 @@ template {
   border: 1px solid #D9DADB;
   padding: 8px 15px 10px 12px;
   border-radius: 5px;
+}
+
+.form-subscribe__input-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .form-subscribe__button {
@@ -2089,6 +2100,16 @@ template {
   cursor: pointer;
   background-color: #4592FF;
   border-radius: 20px;
+}
+
+.invalid {
+  color: #FF4F52;
+}
+
+label.invalid {
+  position: absolute;
+  bottom: -40px;
+  left: 0px;
 }
 
 .footer {
@@ -2323,6 +2344,30 @@ template {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.mail-text {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #262D33;
+}
+
+.mail-button {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #4592FF;
+  cursor: pointer;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1200px) {
@@ -2947,6 +2992,14 @@ template {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  input.invalid {
+    border: 1px solid #FF4F52;
+  }
+  label.invalid {
+    display: none;
+    opacity: 0;
+    bottom: -61px;
+  }
   .footer-nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2978,6 +3031,24 @@ template {
   }
   .footer-copyright__info {
     margin-top: 15px;
+  }
+  .mail {
+    padding-top: 100px;
+  }
+  .mail-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mail-text {
+    text-align: center;
   }
 }
 

@@ -740,9 +740,9 @@
         <div class="container">
             <div class="subscribe-wrap">
                 <h2 class="subscribe__title">Подпишитесь на нашу рассылку</h2>
-                <form action="" method="POST" class="subscribe__form form-subscribe form">
+                <form action="subscribe.php" method="POST" class="form subscribe__form form-subscribe form">
                     <div class="form-subscribe__input-wrap">
-                        <input type="email" name="email" placeholder="Email" class="form-subscribe__input">
+                        <input type="email" name="email" placeholder="Email" class="form-subscribe__input" required>
                     </div>
                     <button class="form-subscribe__button">Подписаться</button>
                 </form>
@@ -909,6 +909,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

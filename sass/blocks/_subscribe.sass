@@ -19,6 +19,7 @@
     &-subscribe
         display: flex
         height: 40px
+        position: relative
         &__input
             margin-right: 10px
             height: 100%
@@ -26,6 +27,10 @@
             border: 1px solid $rec-underline
             padding: 8px 15px 10px 12px
             border-radius: 5px
+            &-wrap
+                display: flex
+                flex-direction: column
+
         &__button
             font-style: normal
             font-weight: 900
@@ -38,3 +43,10 @@
             cursor: pointer
             background-color: $blue
             border-radius: 20px
+.invalid
+    color: $red
+label
+    &.invalid
+        position: absolute
+        bottom: -40px
+        left: 0px

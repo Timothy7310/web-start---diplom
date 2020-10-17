@@ -437,6 +437,14 @@
             &__button
                 margin-top: 15px
                 align-self: center
+    input
+        &.invalid
+            border: 1px solid $red
+    label
+        &.invalid
+            display: none
+            opacity: 0
+            bottom: -61px
     .footer
         &-nav
             flex-wrap: wrap
@@ -455,6 +463,14 @@
             flex-direction: column
             &__info
                 margin-top: 15px
+    .mail
+        padding-top: 100px
+        &-wrap
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-text
+            text-align: center
 @media ( max-width: 576px )
     .container
         width: 90%
