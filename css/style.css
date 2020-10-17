@@ -434,7 +434,7 @@ template {
   font-size: 14px;
   line-height: 20px;
   background-color: #656B70;
-  color: #939699;
+  color: #0b0b0b;
   outline: none;
 }
 
@@ -1245,6 +1245,7 @@ template {
   border-radius: 5px;
   background-color: transparent;
   font-style: normal;
+  cursor: pointer;
   font-weight: 900;
   font-size: 14px;
   line-height: 20px;
@@ -1950,6 +1951,7 @@ template {
   top: 32px;
   left: 35px;
   max-width: 240px;
+  z-index: 4;
 }
 
 .preview-article-main__type {
@@ -2667,6 +2669,50 @@ label.invalid {
   top: 7px;
 }
 
+.text {
+  padding-top: 60px;
+}
+
+.text-wrap {
+  max-width: 606px;
+  margin-left: 100px;
+}
+
+.text-paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4B5157;
+  margin: 0px 0px 30px 0px;
+}
+
+.text-paragraph-first {
+  margin-bottom: 0px;
+}
+
+.text-paragraph-first::first-letter {
+  font-size: 100px;
+  line-height: 75px;
+  color: #4592FF;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-left: -10px;
+  margin-right: 10px;
+  float: left;
+}
+
+.text-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+  margin-top: 46px;
+  margin-bottom: 29px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -2756,6 +2802,10 @@ label.invalid {
   }
   .button-download {
     margin-bottom: 15px;
+  }
+  .preview-wrap {
+    -ms-grid-rows: (minmax(165px, 1fr))[3];
+        grid-template-rows: repeat(3, minmax(165px, 1fr));
   }
   .preview-article-main__oval {
     right: 10px;
@@ -2878,9 +2928,9 @@ label.invalid {
     -ms-grid-columns: (minmax(min-content, 1fr))[2];
         grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
         grid-template-columns: repeat(2, minmax(min-content, 1fr));
-    -ms-grid-rows: (minmax(min-content, 1fr))[8];
-        grid-template-rows: repeat(8, minmax(-webkit-min-content, 1fr));
-        grid-template-rows: repeat(8, minmax(min-content, 1fr));
+    -ms-grid-rows: (minmax(min-content, 169px))[8];
+        grid-template-rows: repeat(8, minmax(-webkit-min-content, 169px));
+        grid-template-rows: repeat(8, minmax(min-content, 169px));
   }
   .read-article__img-laptop {
     width: 100%;
@@ -3522,7 +3572,7 @@ label.invalid {
     grid-row: 1 / 4;
   }
   .preview-reader-title {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 47px;
   }
   .preview-reader-button {

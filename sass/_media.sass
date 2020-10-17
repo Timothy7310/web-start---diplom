@@ -71,6 +71,8 @@
         &-download
             margin-bottom: 15px
     .preview
+        &-wrap
+            grid-template-rows: repeat(3, minmax(165px,1fr))
         &-article
             &-main
                 &__oval
@@ -155,7 +157,7 @@
     .read
         &-wrap
             grid-template-columns: repeat(2,minmax(min-content,1fr))
-            grid-template-rows: repeat(8,minmax(min-content,1fr))
+            grid-template-rows: repeat(8,minmax(min-content,169px))
         &-article
             &__img
                 &-laptop
@@ -582,7 +584,7 @@
             grid-column: 1
             grid-row: 1 / 4
             &-title
-                font-size: 28px
+                font-size: 25px
                 line-height: 47px
             &-button
                 font-size: 13px
