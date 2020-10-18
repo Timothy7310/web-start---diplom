@@ -9,3 +9,107 @@ body
     margin: 0px auto
 img
     max-width: 100%
+@media only screen and ( max-width:2300px) and (min-width: 993px)
+    .button-read
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .foryou-link
+        &:hover
+            color: $blue
+            transition: all 0.3s linear
+
+    .read-article
+        &:hover
+            & .read-article-title,
+            & .read-article__title
+                color: $blue
+                transition: all 0.3s linear
+    .read-popular-text
+        &:hover
+            & .read-popular-title
+                color: $blue
+                transition: all 0.3s linear
+    .read-link
+        &:hover
+            filter: brightness(0.76)
+            transition: all 0.3s linear
+    .investigation-button
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .news-main-item
+        &:hover
+            & .main-item-text__title
+                color: $blue
+                transition: all 0.3s linear
+    .news-recent-more
+        &:hover
+            color: $blue
+            transition: all 0.3s linear
+    .news-recent-text
+        &:hover
+            & .news-recent-text__num
+                color: $blue
+                transition: all 0.3s linear
+    .preview-reader-button
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .preview-article-main__button
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .preview-article-title
+        &:hover
+            color: $blue
+    .form-subscribe__button
+        &:hover
+            background: darken($blue, 10%)
+            transition: all 0.3s linear
+    .footer-info__link
+        &:hover
+            filter: brightness(0.76)
+            transition: all 0.3s linear
+    .footer-info__contacts-link
+        &:hover
+            color: $blue
+            transition: all 0.3s linear
+
+    // Подчеркивание ссылок
+    .header__link
+        position: relative
+        &::after
+            display: block
+            content: ""
+            background-color: $blue
+            height: 3px
+            width: 0%
+            left: 50%
+            position: absolute
+            transition: width .3s ease-in-out
+
+            transform: translateX(-50%)
+
+    .header__link
+        &:hover,
+        &:focus
+            &::after
+                width: 100%
+    .footer-item__link
+        position: relative
+        &::after
+            display: block
+            content: ""
+            background-color: $blue
+            height: 2px
+            width: 0%
+            left: 50%
+            position: absolute
+            transition: width .3s ease-in-out
+            transform: translateX(-50%)
+    .footer-item__link
+        &:hover,
+        &:focus
+            &::after
+                width: 100%

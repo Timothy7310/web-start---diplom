@@ -76,11 +76,16 @@ $(document).ready(function() {
   autoplay: { 
         delay: 3000, 
       },
- 
+  on: {
+    init() {
+      this.el.addEventListener('mouseenter', () => {
+        this.autoplay.stop();
+      });
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+      this.el.addEventListener('mouseleave', () => {
+        this.autoplay.start();
+      });
+    }
   },
 });
 

@@ -16,6 +16,123 @@ img {
   max-width: 100%;
 }
 
+@media only screen and (max-width: 2300px) and (min-width: 993px) {
+  .button-read:hover {
+    background: #1274ff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .foryou-link:hover {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .read-article:hover .read-article-title,
+  .read-article:hover .read-article__title {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .read-popular-text:hover .read-popular-title {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .read-link:hover {
+    -webkit-filter: brightness(0.76);
+            filter: brightness(0.76);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .investigation-button:hover {
+    background: #1274ff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .news-main-item:hover .main-item-text__title {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .news-recent-more:hover {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .news-recent-text:hover .news-recent-text__num {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .preview-reader-button:hover {
+    background: #1274ff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .preview-article-main__button:hover {
+    background: #1274ff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .preview-article-title:hover {
+    color: #4592FF;
+  }
+  .form-subscribe__button:hover {
+    background: #1274ff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .footer-info__link:hover {
+    -webkit-filter: brightness(0.76);
+            filter: brightness(0.76);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .footer-info__contacts-link:hover {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .header__link {
+    position: relative;
+  }
+  .header__link::after {
+    display: block;
+    content: "";
+    background-color: #4592FF;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .header__link:hover::after, .header__link:focus::after {
+    width: 100%;
+  }
+  .footer-item__link {
+    position: relative;
+  }
+  .footer-item__link::after {
+    display: block;
+    content: "";
+    background-color: #4592FF;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .footer-item__link:hover::after, .footer-item__link:focus::after {
+    width: 100%;
+  }
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -531,8 +648,8 @@ template {
 }
 
 .lifehacks-content__item {
-  display: none;
   height: 100%;
+  display: none;
 }
 
 .lifehacks-content__item--active {
@@ -3216,7 +3333,7 @@ label.invalid {
     margin-top: 20px;
   }
   .lifehacks-article {
-    height: 370px;
+    height: 415px;
   }
   .lifehacks-article__text {
     top: 25px;
