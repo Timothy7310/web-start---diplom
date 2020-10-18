@@ -62,6 +62,60 @@ $(document).ready(function() {
     }    
     });
 
+    
+   
+   $('#read-tags-change1').on('click', function(){
+    $('#read-tags-change1').toggleClass('read-tags-button--active')
+   });
+   $('#read-tags-change2').on('click', function(){
+    $('#read-tags-change2').toggleClass('read-tags-button--active')
+   });
+
+   $('#read-tags-change3').on('click', function(){
+    $('#read-tags-change3').toggleClass('read-tags-button--active')
+   });
+
+   $('#read-tags-change4').on('click', function(){
+    $('#read-tags-change4').toggleClass('read-tags-button--active')
+   });
+
+   $('#read-tags-change5').on('click', function(){
+    $('#read-tags-change5').toggleClass('read-tags-button--active')
+   });
+
+   $('#read-tags-change6').on('click', function(){
+    $('#read-tags-change6').toggleClass('read-tags-button--active')
+   });
+
+   $('#read-tags-change7').on('click', function(){
+    $('#read-tags-change7').toggleClass('read-tags-button--active')
+   });
+
+   $('#read-tags-change8').on('click', function(){
+    $('#read-tags-change8').toggleClass('read-tags-button--active')
+   });
+
+   $('#read-tags-change9').on('click', function(){
+    $('#read-tags-change9').toggleClass('read-tags-button--active')
+   });
+
+   $('#read-tags-change10').on('click', function(){
+    $('#read-tags-change10').toggleClass('read-tags-button--active')
+   });
+
+   $('#read-tags-change11').on('click', function(){
+    $('#read-tags-change11').toggleClass('read-tags-button--active')
+   });
+
+   $('#read-tags-change12').on('click', function(){
+    $('#read-tags-change12').toggleClass('read-tags-button--active')
+   });
+   $('#read-tags-change13').on('click', function(){
+    $('#read-tags-change13').toggleClass('read-tags-button--active')
+   });
+
+
+
 
     var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
@@ -88,6 +142,25 @@ $(document).ready(function() {
     }
   },
 });
+
+
+
+var mySwiperArticle = new Swiper('.swiper-container-article', {
+
+  loop: true,
+
+  
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-button--prev',
+    prevEl: '.slider-button--next',
+  },
+
+ 
+})
+
+
 
 
 $(".form").each(function () {
