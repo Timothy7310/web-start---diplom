@@ -1028,6 +1028,20 @@ template {
   padding-right: 26px;
 }
 
+.read-article-info__text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
 .read-article-info__com {
   width: 14px;
   height: 14px;
@@ -1440,6 +1454,15 @@ template {
   width: 17px;
   height: 17px;
   margin-right: 8px;
+}
+
+.comments-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .investigation {
@@ -2873,6 +2896,8 @@ label.invalid {
   }
   .read-article-info__name {
     font-size: 12px;
+    -ms-flex-preferred-size: 16%;
+        flex-basis: 16%;
   }
   .read-article-info__text {
     font-size: 12px;
@@ -2934,6 +2959,10 @@ label.invalid {
   }
   .preview-article-main__text {
     z-index: 3;
+  }
+  .comments-wrap {
+    -ms-flex-preferred-size: 16%;
+        flex-basis: 16%;
   }
 }
 
@@ -3460,9 +3489,8 @@ label.invalid {
     border: 1px solid #FF4F52;
   }
   label.invalid {
-    display: none;
-    opacity: 0;
-    bottom: -61px;
+    position: static;
+    margin-top: 9px;
   }
   .footer-nav {
     -ms-flex-wrap: wrap;
@@ -3564,9 +3592,8 @@ label.invalid {
     height: 60px;
   }
   .read-wrap {
-    -ms-grid-columns: (minmax(min-content, 1fr))[1];
-        grid-template-columns: repeat(1, minmax(-webkit-min-content, 1fr));
-        grid-template-columns: repeat(1, minmax(min-content, 1fr));
+    -ms-grid-columns: (minmax(200px, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
     -ms-grid-rows: (minmax(min-content, 1fr))[14];
         grid-template-rows: repeat(14, minmax(-webkit-min-content, 1fr));
         grid-template-rows: repeat(14, minmax(min-content, 1fr));
@@ -3582,10 +3609,10 @@ label.invalid {
   }
   .read-article-info__text {
     font-size: 13px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 207px;
+  }
+  .read-article-info__text-wrap {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .read-article__img-car {
     display: none;
@@ -3764,6 +3791,15 @@ label.invalid {
   }
   .footer-copyright-text {
     margin-bottom: 15px;
+  }
+  .comments-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

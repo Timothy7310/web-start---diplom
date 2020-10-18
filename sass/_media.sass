@@ -32,6 +32,7 @@
                 padding-left: 25px
                 &__name
                     font-size: 12px
+                    flex-basis: 16%
                 &__text
                     font-size: 12px
                     padding-right: 15px
@@ -83,6 +84,8 @@
                     width: 213px
                 &__text
                     z-index: 3
+    .comments-wrap
+        flex-basis: 16%
 
 @media ( max-width: 992px )
     .container
@@ -444,9 +447,9 @@
             border: 1px solid $red
     label
         &.invalid
-            display: none
-            opacity: 0
-            bottom: -61px
+            position: static
+            margin-top: 9px
+
     .footer
         &-nav
             flex-wrap: wrap
@@ -514,7 +517,7 @@
                 height: 60px
     .read
         &-wrap
-            grid-template-columns: repeat(1,minmax(min-content,1fr))
+            grid-template-columns: repeat(1,minmax(200px,1fr))
             grid-template-rows: repeat(14,minmax(min-content,1fr))
         &-article
             &-info
@@ -524,10 +527,9 @@
                     flex-basis: 70%
                 &__text
                     font-size: 13px
-                    text-overflow: ellipsis
-                    white-space: nowrap
-                    overflow: hidden
-                    width: 207px
+                    &-wrap
+
+                        flex-basis: 100%
             &__img
                 &-car
                     display: none
@@ -636,3 +638,7 @@
         &-copyright
             &-text
                 margin-bottom: 15px
+    .comments-wrap
+        display: flex
+        align-items: center
+        margin-right: 15px
