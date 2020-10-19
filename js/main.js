@@ -153,9 +153,13 @@ var mySwiperArticle = new Swiper('.swiper-container-article', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--prev',
-    prevEl: '.slider-button--next',
+    nextEl: '.slider-button--next ',
+    prevEl: '.slider-button--prev',
   },
+   keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
 
  
 })
@@ -170,7 +174,7 @@ $(".form").each(function () {
         
         email: {
           required: "Enter your email address",
-          email: "Enter your email address correctly, in the format name@domain.com",
+          email: "Enter your email address in the format name@domain.com",
         },
         
       },

@@ -86,6 +86,15 @@
                     z-index: 3
     .comments-wrap
         flex-basis: 16%
+    .info
+        &-author
+            right: 0px
+            &__name
+                font-size: 19px
+                margin: 15px 45px 5px 45px
+        &-text
+            &__title
+                font-size: 52px
 
 @media ( max-width: 992px )
     .container
@@ -251,6 +260,43 @@
                 &-link
                     margin-right: 15px
                     font-size: 12px
+    .info
+        &-author
+            position: static
+            align-self: flex-end
+            margin-top: 30px
+        &-text
+            &__title
+                font-size: 42px
+    .text
+        &-wrap
+            margin: 0px auto
+        &-material
+            flex-direction: column
+        &-slider
+            &__img
+                height: 450px
+    .subject
+        margin-left: 0px
+        margin-top: 10px
+    .slider
+        &-author
+            padding: 12px 35px 11px 0px
+            margin-left: 27px
+            &::before
+                left: -20px
+    .othernews
+        padding-bottom: 65px
+        &-wrap
+            flex-wrap: wrap
+        &-card
+            flex-basis: 46%
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 33px
+        &-title
+            text-align: center
 
 @media ( max-width: 767px )
     body
@@ -440,15 +486,16 @@
             &__input
                 width: 100%
             &__button
-                margin-top: 15px
+                margin-top: 38px
                 align-self: center
     input
         &.invalid
             border: 1px solid $red
     label
         &.invalid
-            position: static
-            margin-top: 9px
+            position: absolute
+            font-size: 13px
+            top: 39px
 
     .footer
         &-nav
@@ -476,6 +523,38 @@
             align-items: center
         &-text
             text-align: center
+    .header
+        &-article
+            &::before
+                background-color: #FFCCBB
+    .info
+        &-wrap
+            padding: 94px 0px 72px 0px
+            margin: 0px auto
+        &-nav
+            flex-direction: column
+            padding-right: 0px
+        &-type
+            margin-bottom: 15px
+        &-text
+            &__title
+                font-size: 40px
+                line-height: 64px
+            &__about
+                font-size: 16px
+            &__favorites
+                left: 4px
+                top: 20px
+        &-author
+            align-self: center
+    .text
+        &-slider
+            &__img
+                height: 350px
+    .repost
+        &::before
+            width: 100%
+
 @media ( max-width: 576px )
     .container
         width: 90%
@@ -645,3 +724,60 @@
         display: flex
         align-items: center
         margin-right: 15px
+    .form
+        &-forward
+            &__button
+                margin-right: 0px
+    .info
+        &-text
+            &__title
+                font-size: 23px
+                line-height: 43px
+    .text
+        &-slider
+            &__img
+                height: 325px
+    .slider
+        &-button
+            width: 45px
+            height: 45px
+            border-radius: 50%
+            top: 39%
+        &-info
+            margin-left: 14px
+        &-author
+            padding: 12px 0px 11px 0px
+            margin-left: 13px
+            flex-direction: column
+            &__name
+                font-size: 12px
+                min-width: 106px
+            &__prof
+                font-size: 11px
+            &__avatar
+                width: 35px
+                height: 35px
+    .quote
+        &-img
+            height: 60px
+            width: 60px
+            left: -10px
+    .button
+        &-wrap
+            flex-wrap: wrap
+        &-tag
+            margin-bottom: 10px
+    .repost
+        &-buttons
+            flex-direction: column
+        &__button
+            margin-right: 0px
+            margin-bottom: 15px
+        &-title
+            text-align: center
+            font-size: 23px
+        &::before
+            width: 100%
+    .othernews
+        &-wrap
+            flex-direction: column

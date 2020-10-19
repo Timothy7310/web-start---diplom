@@ -60,9 +60,11 @@ img
         &:hover
             background: darken($blue, 10%)
             transition: all 0.3s linear
-    .preview-article-title
+    .preview-article
         &:hover
-            color: $blue
+            & .preview-article-title
+                color: $blue
+                transition: all 0.3s linear
     .form-subscribe__button
         &:hover
             background: darken($blue, 10%)
