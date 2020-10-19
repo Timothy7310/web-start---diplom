@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('.header__burger').click(function(event){
-        $('.header__burger, .header-nav' ).toggleClass('active');
+    $('#burger').click(function(event){
+        $('.header__burger,.header__burger-span, .header-nav' ).toggleClass('active');
         $('body').toggleClass('lock');
     });
     var tabsItem = $(".recommendations-item");
@@ -180,6 +180,14 @@ $(".form").each(function () {
       },
     });
   });
+
+
+  $('#loading').on('click', function(){
+    $('.comments-item-hidden').removeClass('comments-item-hidden'),
+    $('.button-loading').addClass('button-loading-hidden');
+
+  });
+
 
 });
 
