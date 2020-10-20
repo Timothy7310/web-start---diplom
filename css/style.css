@@ -548,6 +548,22 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.woff") format("woff");
+  src: url("../fonts/Lato.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBlack';
+  src: url("../fonts/Lato-Black.woff") format("woff");
+  src: url("../fonts/Lato-Black.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .header {
   background-color: #262D33;
   padding: 15px 0px 38px 0px;
@@ -1061,7 +1077,7 @@ template {
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: relative;
-  margin-top: 37px;
+  margin-top: 35px;
 }
 
 .read-article-info::before {
@@ -1545,6 +1561,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 15px;
 }
 
 .investigation {
@@ -1946,7 +1963,7 @@ template {
 .preview {
   background-color: #262D33;
   padding-top: 60px;
-  padding-bottom: 56px;
+  padding-bottom: 60px;
 }
 
 .preview-wrap {
@@ -1956,9 +1973,9 @@ template {
   -ms-grid-columns: (minmax(min-content, 1fr))[4];
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
-  -ms-grid-rows: (minmax(min-content, 1fr))[3];
-      grid-template-rows: repeat(3, minmax(-webkit-min-content, 1fr));
-      grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  -ms-grid-rows: (minmax(min-content, 170px))[3];
+      grid-template-rows: repeat(3, minmax(-webkit-min-content, 170px));
+      grid-template-rows: repeat(3, minmax(min-content, 170px));
 }
 
 .preview-reader {
