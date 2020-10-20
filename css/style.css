@@ -4903,6 +4903,10 @@ label.invalid-textarea {
     top: 15px;
     right: 14px;
   }
+  .subscribe__title {
+    font-size: 35px;
+    line-height: 46px;
+  }
   .footer-list {
     -ms-flex-preferred-size: 44%;
         flex-basis: 44%;
