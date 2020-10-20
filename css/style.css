@@ -133,6 +133,60 @@ img {
   .footer-item__link:hover::after, .footer-item__link:focus::after {
     width: 100%;
   }
+  .form-home__button:hover {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .form-back__button:hover {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .form-forward__button:hover {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .info-author__link:hover {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .subject:hover .subject-name {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .repost__button:hover {
+    background: #1274ff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .othernews-card:hover .othernews-title {
+    color: #4592FF;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .comments-header__button:hover {
+    background-color: #262D33;
+    color: #ffffff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    border: 1px solid #262D33;
+  }
+  .button-loading:hover {
+    background-color: #262D33;
+    color: #ffffff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    border: 1px solid #262D33;
+  }
+  .think-about-btn:hover {
+    background: #1274ff;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -2536,7 +2590,21 @@ label.invalid {
 
 .info {
   background-image: url(../img/article/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
+}
+
+.info--2 {
+  background-image: url(../img/article/header-bg-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.info--3 {
+  background-image: url(../img/article/header-bg-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .info::before {
@@ -3229,6 +3297,10 @@ label.invalid {
           justify-content: space-between;
 }
 
+.othernews-link {
+  text-decoration: none;
+}
+
 .othernews-card {
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%;
@@ -3697,6 +3769,13 @@ label.invalid {
   right: 21px;
 }
 
+label.invalid-textarea {
+  position: absolute;
+  bottom: 32px;
+  right: 0;
+  color: #FF4F52;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -4143,6 +4222,24 @@ label.invalid {
   .othernews-title {
     text-align: center;
   }
+  .comments-wraper {
+    margin-left: 0px;
+  }
+  .comments-reply-item {
+    padding-left: 70px;
+  }
+  .think-about-form {
+    width: 100%;
+  }
+  .think-about-textarea {
+    width: 90%;
+  }
+  .button-loading {
+    padding: 14px 0px 14px 0px;
+  }
+  label.invalid-textarea {
+    right: 59px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -4493,6 +4590,39 @@ label.invalid {
   .repost::before {
     width: 100%;
   }
+  .comments-header__title {
+    font-size: 28px;
+  }
+  .comments-header__button {
+    font-size: 13px;
+  }
+  .comments-avatar {
+    width: 55px;
+    height: 55px;
+  }
+  .comments-text__name {
+    font-size: 14px;
+  }
+  .comments-text__info {
+    font-size: 16px;
+  }
+  .comments-reply__info {
+    width: 100%;
+  }
+  .comments-text__info {
+    width: 100%;
+  }
+  .think-about__avatar {
+    width: 55px;
+    height: 55px;
+  }
+  .think-about-btn {
+    margin-top: 26px;
+  }
+  label.invalid-textarea {
+    left: 0;
+    bottom: 47px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -4827,6 +4957,47 @@ label.invalid {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .comments-header {
+    margin-bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .think-about-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .think-about__avatar {
+    margin-top: 26px;
+    margin-left: 0px;
+  }
+  .think-about-form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0px;
+  }
+  .think-about-form::before {
+    display: none;
+  }
+  .think-about__title {
+    text-align: center;
+  }
+  .think-about-btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  label.invalid-textarea {
+    left: 18px;
+    right: 19px;
   }
 }
 /*# sourceMappingURL=style.css.map */

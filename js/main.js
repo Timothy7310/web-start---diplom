@@ -181,6 +181,22 @@ $(".form").each(function () {
     });
   });
 
+  
+$(".think-about-form").each(function () {
+    $(this).validate({
+      errorClass: "invalid-textarea",
+      messages: {
+        message: {
+          required: "Минимальный набор 100 символов",
+           email: " Минимальный набор 100 символов"
+        },
+        
+        
+      },
+    });
+  });
+
+
 
   $('#loading').on('click', function(){
     $('.comments-item-hidden').removeClass('comments-item-hidden'),
