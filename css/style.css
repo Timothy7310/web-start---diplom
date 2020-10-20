@@ -16,7 +16,23 @@ img {
   max-width: 100%;
 }
 
+.back-to-top {
+  position: fixed;
+  left: 20px;
+  bottom: 90px;
+  padding: 10px 25px 10px 25px;
+  border: 1px solid #4592FF;
+  text-decoration: none;
+  background-color: transparent;
+  color: #4592FF;
+  border-radius: 10px;
+  display: none;
+}
+
 @media only screen and (max-width: 2300px) and (min-width: 993px) {
+  .back-to-top:hover {
+    color: #0051c5;
+  }
   .button-read:hover {
     background: #1274ff;
     -webkit-transition: all 0.3s linear;
@@ -2219,6 +2235,7 @@ template {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  width: 100%;
 }
 
 .swiper-container {
@@ -2527,30 +2544,37 @@ label.invalid {
   line-height: 20px;
 }
 
-.clamp-text--1 {
+.clamp-text-1 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.clamp-text--2 {
+.clamp-text-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.clamp-text--3 {
+.clamp-text-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.clamp-text--4 {
+.clamp-text-4 {
   display: -webkit-box;
   -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.clamp-text-5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -2934,7 +2958,7 @@ label.invalid {
   margin-bottom: 29px;
 }
 
-.text-slider__img {
+.text-slider-img {
   height: 555px;
   width: 100%;
   -o-object-fit: cover;
@@ -4190,7 +4214,7 @@ label.invalid-textarea {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .text-slider__img {
+  .text-slider-img {
     height: 450px;
   }
   .subject {
@@ -4591,7 +4615,7 @@ label.invalid-textarea {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .text-slider__img {
+  .text-slider-img {
     height: 350px;
   }
   .repost::before {
@@ -4899,7 +4923,7 @@ label.invalid-textarea {
     font-size: 23px;
     line-height: 43px;
   }
-  .text-slider__img {
+  .text-slider-img {
     height: 325px;
   }
   .slider-button {
