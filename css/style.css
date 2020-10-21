@@ -2007,9 +2007,8 @@ template {
   -ms-grid-columns: (minmax(min-content, 1fr))[4];
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
-  -ms-grid-rows: (minmax(min-content, 170px))[3];
-      grid-template-rows: repeat(3, minmax(-webkit-min-content, 170px));
-      grid-template-rows: repeat(3, minmax(min-content, 170px));
+  -ms-grid-rows: (minmax(140px, 169px))[3];
+      grid-template-rows: repeat(3, minmax(140px, 169px));
 }
 
 .preview-reader {
@@ -2299,7 +2298,12 @@ template {
   height: 100%;
 }
 
+.swiper-pagination {
+  margin-bottom: 30px;
+}
+
 .swiper-pagination-bullet {
+  margin: 0 8px;
   background-color: #D9DADB !important;
 }
 
@@ -4519,6 +4523,10 @@ label.invalid-textarea {
     position: absolute;
     top: 0;
     right: -15px;
+  }
+  .read-popular-data {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
   }
   .read-article__img-car {
     width: 250px;

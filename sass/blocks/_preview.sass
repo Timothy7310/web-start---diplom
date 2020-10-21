@@ -6,7 +6,7 @@
         display: grid
         grid-gap: 30px
         grid-template-columns: repeat(4,minmax(min-content,1fr))
-        grid-template-rows: repeat(3,minmax(min-content,170px))
+        grid-template-rows: repeat(3,minmax(140px,169px))
     &-reader
         grid-column: 1 / 3
         grid-row: 1 / 4
@@ -217,7 +217,10 @@
     width: 100%
     height: 100%
 
+.swiper-pagination
+    margin-bottom: 30px
 .swiper-pagination-bullet
+    margin: 0 8px
     background-color: #D9DADB !important
 .swiper-pagination-bullet-active
     background-color: white !important
