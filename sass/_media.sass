@@ -176,6 +176,11 @@
             &__img
                 &-laptop
                     width: 100%
+                &-car
+                    width: 350px
+                    height: 350px
+                    position: absolute
+                    top: 0
             &:nth-child(1)
                 grid-row: 1 / 3
                 grid-column: span 2
@@ -303,6 +308,8 @@
         &-wraper
             margin-left: 0px
         &-reply
+            &__info
+                width: 100%
             &-item
                 padding-left: 70px
     .think
@@ -459,6 +466,12 @@
                     position: absolute
                     top: 0
                     right: -15px
+    .read
+        &-article
+            &__img
+                &-car
+                    width: 250px
+                    height: 250px
 
     .author
         margin-bottom: 30px
@@ -605,7 +618,15 @@
         &.invalid-textarea
             left: 0
             bottom: 47px
-
+    .back-to-top
+        width: 40px
+        height: 40px
+        &::before
+            width: 3px
+            height: 23px
+        &::after
+            border-top: 3px solid $blue
+            border-left: 3px solid $blue
 @media ( max-width: 576px )
     .container
         width: 90%
@@ -648,7 +669,7 @@
     .read
         &-wrap
             grid-template-columns: repeat(1,minmax(200px,1fr))
-            grid-template-rows: repeat(14,minmax(min-content,1fr))
+            grid-template-rows: repeat(13,minmax(min-content,150px))
         &-article
             &-info
                 flex-wrap: wrap
@@ -664,7 +685,9 @@
                 &-car
                     display: none
                 &-laptop
-                    height: 265px
+                    height: 250px
+            &-date
+                bottom: 16px
             &-text
                 margin: 0px auto
             &:nth-child(1)
@@ -691,13 +714,13 @@
             height: 399px
         &-tags
             grid-column: 1
-            grid-row: 11 / 13
+            grid-row: 11
         &-check
             grid-column: 1
-            grid-row: 13
+            grid-row: 12
         &-links
             grid-column: 1
-            grid-row: 14
+            grid-row: 13
         &-popular
             &-tool
                 flex-basis: 100%
@@ -800,6 +823,7 @@
             top: 39%
         &-info
             margin-left: 14px
+            flex-basis: 60%
         &-author
             padding: 12px 0px 11px 0px
             margin-left: 13px
@@ -812,6 +836,8 @@
             &__avatar
                 width: 35px
                 height: 35px
+            &::before
+                left: -8px
     .quote
         &-img
             height: 60px
